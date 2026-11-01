@@ -1,0 +1,55 @@
+name: LurkAPI
+slug: lurkapi
+url: https://lurkapi.com
+llms_txt: https://lurkapi.com/llms.txt
+llms_full_txt: https://lurkapi.com/llms-full.txt
+llms_txt_status: published
+
+category: web-search-for-agents
+subcategory: social-media-data-api
+
+tagline: Public posts, profiles, ads and transcripts from 16 social platforms as JSON, by REST or MCP.
+
+description: |
+  LurkAPI is a social media data API. One GET request returns clean JSON
+  from public pages on 16 platforms: TikTok, Instagram, YouTube, Reddit,
+  Facebook, X (Twitter), LinkedIn, Threads, Bluesky, Telegram, Snapchat,
+  Truth Social, Google (Maps, News, Ads Transparency), eBay, Linktree and
+  any public web page. It has 88 endpoints, including the ads in Meta's,
+  Google's, TikTok's and LinkedIn's ad libraries and video transcripts.
+
+  The same endpoints are a remote MCP server at https://api.lurkapi.com/mcp,
+  so Claude, ChatGPT, Cursor, VS Code or Claude Code can look things up
+  directly. Users sign in through the browser with OAuth; no key is pasted.
+  Tool results leave out empty fields and keep one URL per image or video
+  to save tokens, long results come in parts, and `max_credits` caps what
+  one call can cost.
+
+  Pricing is per call in credits: most calls cost 1 credit. New accounts get
+  100 free credits with no card, and a balance under 25 is topped back up to
+  25 each day. Packs start at $9 for 10,000 credits and never expire.
+  LurkAPI reads public data only; it never logs in to anyone's account and
+  can't post or message.
+
+features:
+  - 88 endpoints across 16 platforms with one API key
+  - Meta, Google Ads Transparency, LinkedIn and TikTok (EU) ad library search
+  - Video transcripts for YouTube, TikTok and Instagram, with speech-to-text when there are no captions
+  - Any public web page as HTML, markdown or text
+  - Remote MCP server (Streamable HTTP) with OAuth sign-in and one tool per endpoint
+  - OpenAPI 3.1 spec, llms.txt and every docs page as markdown
+  - Failed calls (bad parameters, rate limits, 5xx) cost nothing
+
+use_cases:
+  - Giving an agent live social media data instead of what the model remembers
+  - Tracking the ads a competitor runs on Facebook, Instagram, Google and LinkedIn
+  - Vetting creators with their follower counts and recent posts
+  - Summarizing a YouTube channel from its transcripts
+  - Following what a subreddit says about a product
+
+license: freemium
+deployment: saas
+platforms: [web]
+tags: [social-media, mcp, rest-api, scraping, ad-library, transcripts, tiktok, instagram, youtube, reddit]
+maintainer: LurkAPI
+added: 2026-11-01
